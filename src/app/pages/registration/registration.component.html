@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="alert alert-danger" role="alert" [hidden]='isHiddenAlert'>
+            Please, complete registration form
+        </div>
+        <h3>PERSONAL INFORMATION</h3>
+        <form #registerForm = 'ngForm' (ngSubmit)="onSubmit(registerForm)">
+            <div class="row">
+                <div class="col-md-6">
+                    <label>First name: <span class="star">*</span></label>
+                    <input [(ngModel)]="user.firstName" name="first" #fName='ngModel' pattern = "[a-zA-Z]{2,}" type="text" class="form-control" required>
+                    <div class="invalid-feedback" [hidden] = "fName.valid || fName.untouched">Please provide a valid value.</div>
+                </div>
+                <div class="col-md-6">
+                    <label>Last name: <span class="star">*</span></label>
+                    <input [(ngModel)]="user.lastName" name="last" #lName='ngModel' pattern = "[a-zA-Z]{2,}" type="text" class="form-control" required>
+                    <div class="invalid-feedback" [hidden] = "lName.valid || lName.untouched">Please provide a valid value.</div>
+                </div>
+                <div class="col-md-6">
+                    <label>Email address: <span class="star">*</span></label>
+                    <input [(ngModel)]="user.email" name="email" #emails='ngModel' pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" class="form-control" required>
+                    <div class="invalid-feedback" [hidden] = "emails.valid || emails.untouched">Please provide a valid value.</div>
+                </div>
+                <div class="col-md-6">
+                    <label> Password: <span class="star">*</span></label>
+                    <input [(ngModel)]="user.password" name="passw" #pass='ngModel' pattern = "[a-zA-Z0-9]{5,10}" type="password" class="form-control" required>
+                    <div class="invalid-feedback" [hidden] = "pass.valid || pass.untouched">Please provide a valid value.</div>
+                </div>
+                <div class="col-md-6">
+                    <label> Balance: <span class="star">*</span></label>
+                    <input [(ngModel)]="user.balance" name="balan" #bal='ngModel' pattern = "^[0-9]*$" type="text" class="form-control" required>
+                    <div class="invalid-feedback" [hidden] = "bal.valid || bal.untouched">Please provide a valid value.</div>
+                </div>
+            </div>
+            <a><button type="submit" class="btn btn-warning">Create account</button></a>
+          </form>
+    </div>
+</div>

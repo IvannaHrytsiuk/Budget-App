@@ -1,0 +1,84 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="../../../assets/ico/menu.png" alt="">
+            </div>
+            <div class="col-md-2">
+                <img src="../../../assets/ico/user.png" alt="">
+                <span>{{user.user.firstName | titlecase}} {{user.user.lastName | titlecase}}</span>
+            </div>
+            <div class="col-md-2">
+                <img src="../../../assets/ico/wallet.png" alt="">
+                <span>{{user.user.balance}} UAH</span>
+            </div>
+            <div class="col-md-2">
+                <img src="../../../assets/ico/money.png" alt="">
+                <span>0 UAH</span>
+            </div>
+            <div class="col-md-2">
+                <img src="../../../assets/ico/calendar.png" alt="">
+                <span>{{date | date:'shortDate'}}</span>
+            </div>
+        </div>
+        <div class="logOut">
+            <a (click)="logOut()" class="btn btn-dark">Log out</a>
+        </div>
+        <div class="row incomesBlock">
+            <div class="col-md-3">
+                <p class="nameSum">INCOME</p>
+                <div class="icons incomeActive" (click)="setActive()">
+                    <img src="../../../assets/ico/income.png" alt="">
+                </div>
+                <p class="nameSum">{{almoustIncomes}} UAH</p>
+            </div>
+        </div>
+        <p class="nameBlock">SAVING</p>
+        <div class="row savingBlock">
+            <div class="col-md-2" *ngFor="let save of savingArr" (click)="clickSaving(calc)">
+                <p class="nameSum">{{save.name | uppercase}}</p>
+                <div class="icons">
+                    <img src="../../../assets/ico/savi.png" alt="">
+                </div>
+                <p class="nameSum">{{save.balance}} UAH</p>
+            </div>
+            <div class="col-md-2">
+                <p class="nameSum">  </p>
+                <div class="icons">
+                    <span class="plus">+</span>
+                </div>
+                <p class="nameSum">  </p>
+            </div>
+        </div>
+
+        <ng-template #calc>
+        <div class="modal-header">
+            <h4 class="modal-title pull-left">Modal</h4>
+            <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            This is a modal.
+        </div>
+        </ng-template>
+
+        <p class="nameBlock">SPENDS</p>
+        <div class="row savingBlock">
+            <div class="col-md-2" *ngFor="let spend of spendsArr" (click)="checkSpend(calc)">
+                <p class="nameSum">{{spend.name | uppercase}}</p>
+                <div class="icons">
+                    <img src="../../../assets/ico/spend.png" alt="">
+                </div>
+                <p class="nameSum">{{spend.suma}} UAH</p>
+            </div>
+            <div class="col-md-2">
+                <p class="nameSum">  </p>
+                <div class="icons">
+                    <span class="plus">+</span>
+                </div>
+                <p class="nameSum">  </p>
+            </div>
+        </div>
+    </div>
+</div>
