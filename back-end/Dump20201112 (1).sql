@@ -176,7 +176,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'ivan','ivanov','ii@gmail.com','$2a$08$R2hZZPpiYw0/pjZMdXcG7ONkxFeYM/g1I8Cl0I/N0wRTfrFNYdoMG','1000','2020-11-11 15:29:22','2020-11-11 15:29:22'),(2,'petro','petriv','pp@gmail.com','$2a$08$ezUUmhvrHzL3R3ZbMRthaOinA7RuEMwDPZXCRbZj5TwYGGHaVyQgS','20000','2020-11-11 15:29:55','2020-11-11 15:29:55'),(3,'iryna','petriv','ip@gmail.com','$2a$08$WaU3uWwWvZQrOtuO2ogKh.G84GiDm27bC7jfmN0zC445DKvxsFapq','5000','2020-11-11 15:30:13','2020-11-11 15:30:13'),(4,'fhfd','fdgdfgd','dsfsfs@sg.dh','$2a$08$2sXMhWChCdV5kMAcLqL.hOA7vDBoI4eDzyu.6FQyjKiARS8v2NL/W','1212','2020-11-11 15:50:10','2020-11-11 15:50:10'),(5,'ghfhgfh','ggfhgf','hgjhg@fg.hgf','$2a$08$qfAIl73zkyRoLNDK.ISkP.jYka5K5DQ6FrFqv8SjBykjSL55ikeL.','5454','2020-11-11 16:01:23','2020-11-11 16:01:23'),(6,'dsdfs','sdfsdfsd','sdfs@sdg.sdf','$2a$08$fIZkxDRqyRy1J7clSLVvEOsIYa9MrCxZBqtiwwKpCSNbNOgPuHtuG','11111','2020-11-11 16:03:02','2020-11-11 16:03:02'),(7,'hgjhg','hgjhg','hgjh@jhg.hhg','$2a$08$tbqpxNU1GC8bEpulp2/LnOxqkQ8KoZPsVQeb62R9aJBoTg8G8jKSi','32424','2020-11-11 16:09:01','2020-11-11 16:09:01'),(8,'gfhgf','ngg','jhgkjg@hg.hg','$2a$08$nfptERWbi/1CdUcHOa0NuecBKJYRp0a1ZQUQ2QV4FNXasxhsrcHgG','4445','2020-11-11 16:10:05','2020-11-11 16:10:05'),(9,'gfg','bv','vnvg@hgf.jf','$2a$08$r6E2ADxjB0MXba/ufyTJGem/dw2BIR0tBw7CvEGc8rN1U8dWxFkIG','4355','2020-11-11 16:13:19','2020-11-11 16:13:19'),(10,'sdfsdf','sdfsd','dfsdf@srg.fdg','$2a$08$vRtbC2irhpqJ38U9QhI25Or0yZz23e2L1/zIjVMQeBNQ.5sPaTi9i','252','2020-11-11 16:14:49','2020-11-11 16:14:49'),(11,'fgssgs','sdgsdg','sdgsdg@fdg.df','$2a$08$zrRQmuRxrIOWvCP/RTkBfO5AK3Qo9YEzTS/tnNRkh8QB9YiXFvele','3454','2020-11-11 16:17:53','2020-11-11 16:17:53');
+INSERT INTO `users` VALUES (1,'ivan','ivanov','ii@gmail.com','$2a$08$R2hZZPpiYw0/pjZMdXcG7ONkxFeYM/g1I8Cl0I/N0wRTfrFNYdoMG','1000','2020-11-11 15:29:22','2020-11-11 15:29:22'),(2,'petro','petriv','pp@gmail.com','$2a$08$ezUUmhvrHzL3R3ZbMRthaOinA7RuEMwDPZXCRbZj5TwYGGHaVyQgS','20000','2020-11-11 15:29:55','2020-11-11 15:29:55'),(3,'iryna','petriv','ip@gmail.com','$2a$08$WaU3uWwWvZQrOtuO2ogKh.G84GiDm27bC7jfmN0zC445DKvxsFapq','5000','2020-11-11 15:30:13','2020-11-11 15:30:13');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -189,4 +189,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-11-12 17:42:54
+-- Dump completed on 2020-11-13  7:56:47
