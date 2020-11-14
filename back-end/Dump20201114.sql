@@ -1,4 +1,4 @@
-CREATE DATABASE  IF NOT EXISTS `budget` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE  IF NOT EXISTS `budget` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `budget`;
 -- MySQL dump 10.13  Distrib 8.0.21, for Win64 (x86_64)
 --
@@ -110,7 +110,7 @@ CREATE TABLE `user_saving` (
   `balance` int DEFAULT NULL,
   `id` int NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -119,7 +119,7 @@ CREATE TABLE `user_saving` (
 
 LOCK TABLES `user_saving` WRITE;
 /*!40000 ALTER TABLE `user_saving` DISABLE KEYS */;
-INSERT INTO `user_saving` VALUES (1,1,'bank',500,1),(2,1,'cash',500,2),(1,2,'bank',1000,3),(2,2,'cash',500,4);
+INSERT INTO `user_saving` VALUES (1,1,'bank',500,1),(2,1,'cash',500,2),(1,2,'bank',1000,3),(2,2,'cash',500,4),(1,1,'bank',500,5),(2,1,'cash',500,6),(1,2,'bank',1000,7);
 /*!40000 ALTER TABLE `user_saving` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -189,4 +189,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-11-13  7:56:47
+-- Dump completed on 2020-11-14 16:57:08
